@@ -29,7 +29,7 @@ end
 # /posts/:id/stats
 
 Rails.application.routes.draw do
-  # Your code here
+   get '/posts/:id/stats', to 'posts#stats'
 end
 
 # Implement the following controller action so that it
@@ -46,7 +46,7 @@ end
 
 class PostsController < ApplicationController
   def stats
-    # Your code here
+       @posts = Posts.find([params[:id])
   end
 end
 
