@@ -1,0 +1,4 @@
+# Please answer the following question.
+
+What's your past experience in building and integrating APIs?
+What type of authentication(s) did you use?
