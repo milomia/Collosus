@@ -43,7 +43,10 @@ end
 
 class CommentsController < ApplicationController
   def users_comments
-    # Your code here
+    @from_age=params[:from_age]
+    @to_age=params[:to_age]
+    @posts = Author.where(age > @from_age and age < @to_age)
+    @posts.to_json
   end
 end
 
